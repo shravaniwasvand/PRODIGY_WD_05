@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modern Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button onclick="getWeather()">Search</button>
+        <button onclick="getLocationWeather()">My Location</button>
+    </div>
+
+    <div class="weather-card">
+        <div class="top-section">
+            <div>
+                <h1 id="temp">--°</h1>
+                <p id="condition">Weather Condition</p>
+            </div>
+            <img id="icon" src="" alt="Weather Icon">
+        </div>
+
+        <div class="extra-info">
+            <div>
+                <p>Humidity</p>
+                <h3 id="humidity">--%</h3>
+            </div>
+            <div>
+                <p>Wind</p>
+                <h3 id="wind">-- m/s</h3>
+            </div>
+        </div>
+
+        <div class="forecast">
+            <div>Mon ☀️</div>
+            <div>Tue 🌤</div>
+            <div>Wed ⛈</div>
+            <div>Thu 🌧</div>
+            <div>Fri 🌧</div>
+            <div>Sat ⛈</div>
+            <div>Sun 🌤</div>
+        </div>
+    </div>
+<div id="forecast" class="forecast"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
